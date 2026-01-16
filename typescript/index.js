@@ -50,3 +50,5 @@ var Role;
 console.log(Role.ADMIN);
 console.log(Role.GUEST);
 console.log(Role.USER);
+var array = 'Hello';
+console.log(array);

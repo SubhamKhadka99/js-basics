@@ -70,3 +70,5 @@ console.log(Role.ADMIN)
 console.log(Role.GUEST)
 console.log(Role.USER)
 
+let array : string = 'Hello'
+console.log(array)
