@@ -99,6 +99,12 @@ var greet1 = function (name) {
     console.log("Hello ".concat(name));
 };
 greet1('Ram');
+//typecasting
+var greet2 = function (user) {
+    if (user === void 0) { user = { name: 'abc' }; }
+    console.log("Hello ".concat(user.name));
+};
+greet1('Ram');
 //! never
 // doesn't return anything 
 var func = function () {
@@ -108,4 +114,61 @@ var func = function () {
 var add = function (A, B) {
     return A + B;
 };
-add(10, 20);
+//union
+var id;
+id = '1';
+id = 12;
+//only takes the value assigned to new type STATUS
+var res_status;
+res_status = "error";
+res_status = "fail";
+res_status = "success";
+// let D : C = {
+//  a: '',
+//  b:''
+// }
+//OR 
+var E = {
+    a: '',
+    b: ''
+};
+//! class
+var user11 = /** @class */ (function () {
+    function user11(name, email, password, id) {
+        this.email = email,
+            this.name = name,
+            this.password = password,
+            this.id = id;
+    }
+    user11.prototype.getPassword = function () {
+        return this.password;
+    };
+    return user11;
+}());
+var ram = new user11('Ram', 'Ram@gmail.com', '12345', 12);
+var box = {
+    message: 'This is box',
+    value: [12, 24]
+};
+var string_box = {
+    message: 'This is box',
+    value: '12'
+};
+var number_box = {
+    message: 'This is box',
+    value: 13
+};
+//! array function
+var wrapper = function (value) {
+    if (Array.isArray(value)) {
+        return value;
+    }
+    return [value];
+};
+wrapper('a');
+wrapper([120, 20]);
+//get first element
+var getFirstElement = function (value) {
+    return value[0];
+};
+getFirstElement([12, 3456, 754, 35, 3]);
